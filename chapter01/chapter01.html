@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scope Test</title>
+</head>
+<body>
+    <h1>Testing var Scope</h1>
+    <script>
+        console.log("Script start");
+        var adult = true;
+        console.log("Before if:", typeof myName, myName);
+
+        if (adult) {
+            console.log("Inside if, before var:", typeof myName, myName);
+            var myName = "Kyle";
+            let age = 39;
+            console.log("Inside if, after var:", myName, age);
+            console.log("Secret!");
+        }
+
+        console.log("After if:", myName);
+
+        console.log("Script end"); // 종료점 확인용
+    </script>
+</body>
+</html>

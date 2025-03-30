@@ -1,5 +1,3 @@
-var myName = "Kyle";
-var age;
 var adult = true;
 
 if (adult) {
@@ -9,4 +7,4 @@ if (adult) {
 }
 
 console.log(myName); // Kyle
-console.log(age); // undefined
+console.log(age); // ReferenceError: age is not defined
